@@ -1,0 +1,33 @@
+import java.util.*;
+//import java.util.Scanner;
+
+
+public class sort_ByInsert {
+public static void main(String[] args) {
+
+       Scanner input = new Scanner(System.in);
+       System.out.println("Enter number of elements to be sorted: ");
+
+       String num_of_elements = input.nextLine();
+
+       String[] num = new String[Integer.parseInt(num_of_elements)];
+
+       for (int i = 0; i < Integer.parseInt(num_of_elements); i++)
+       {
+           System.out.print("Input Element" + (i + 1) + ": ");
+           num[i] = input.nextLine();
+        }
+
+       int index = 0;
+     
+        for(String element : num){
+    		    
+            System.out.println("Element at index " + index + " = " + element);
+            index=index+1;
+        }
+        	input.close(); 
+        	
+        }
+
+        }
+    
